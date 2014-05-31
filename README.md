@@ -1,4 +1,5 @@
 connexta.github.io
 ==================
 
-Connexta Web Site
+This is our Connexta, LLC web site.
+Licensed with GPLv3.
