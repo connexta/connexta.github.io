@@ -174,7 +174,7 @@
             $('.contact-error').slideUp(speed); // Hide previous attempt error message
             $.ajax({
                 dataType: "jsonp",
-                url: "http://getsimpleform.com/messages/ajax?form_api_token=86f178fd1e3e54c17c391bafed19d487",
+                url: "http://getsimpleform.com/messages/ajax?form_api_token=1dcd6bc750b8083b5ce6c5c4f34da7dc",
                 data: formData,
                 success: function(html) {
                     var alertBox = $(html).filter('.alert.error'); // Get alert box if already one
