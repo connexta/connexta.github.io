@@ -195,7 +195,7 @@
 		}
 
 
-		.logo { width: 150px; margin-bottom: 10px;}
+		.logo { width: 150px; margin-bottom: 0; padding-top:0}
 		.logo  img { width: 100%; }
 
 	}
