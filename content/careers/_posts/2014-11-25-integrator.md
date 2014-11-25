@@ -16,7 +16,7 @@ location: Northern VA
 
 required:
  - Excellent interpersonal and communication skills
- - Ability to​give customer briefings and demonstrations
+ - Ability to give customer briefings and demonstrations
  - Understanding of OS virtualization, provisioning, and automation. 
  - System Administration skills related to Linux and Windows operating systems. 
  - Ability to quickly learn and use new technologies
