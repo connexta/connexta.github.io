@@ -2,7 +2,7 @@
 
 layout: opening
 
-type: integrator
+type: admin
 
 title: System Integrator
 
