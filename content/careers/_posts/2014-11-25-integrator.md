@@ -4,7 +4,7 @@ layout: opening
 
 type: admin
 
-title: System Integrator
+title: Systems Administrator
 
 description:  Connexta is looking for a qualified Systems Administrator to support integration at customer locations in the Washington DC metro area.
 
