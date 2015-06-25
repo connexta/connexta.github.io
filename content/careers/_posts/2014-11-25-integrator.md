@@ -17,7 +17,7 @@ location: Springfield, VA
 required:
  - System Administration skills related to Linux and Windows operating systems. 
  - Understanding of OS virtualization, provisioning, and automation. 
- - Ability to quickly learn and use new technologies
+ - Ability to quickly learn and use new technologies 
  - Excellent interpersonal and communication skills
  - Ability to give customer briefings and demonstrations
  - Ability to obtain US Security Clearance
