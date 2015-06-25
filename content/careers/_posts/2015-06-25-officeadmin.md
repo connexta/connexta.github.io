@@ -4,7 +4,7 @@ layout: opening
 
 title: Office Administrator
 
-type: office
+type: admin
 
 description: Are you looking for the oopportunity to be a part of the team running the operations of a fast moving software company?  Connexta is looking for an Office Administrator supporting day-to-day company operations.
 
