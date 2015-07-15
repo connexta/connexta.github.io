@@ -6,9 +6,9 @@ title: Full Stack Developer
 
 type: fullstack
 
-description:  Like to play both sides?  Connexta is looking for full stack software developers to create and contribute amazing software. 
+description:  Like to play both sides?  Connexta is looking for full stack software developers to create and contribute amazing software.
 
-details: This position is physically on site with the customer where access to internal systems permit the installation and integration of newly developed software. In this unique position, you will be able to be a part of the extended Connexta team while developing positive relationships with the core customer team. Junior and senior positions are available. Salary is commensurate with expertise.
+details: Develop free and open source software, primarily for the Codice Foundation Distributed Data Framework (DDF) project.  Junior and senior positions are available. Salary is commensurate with expertise.
 
 location-code: co
 
