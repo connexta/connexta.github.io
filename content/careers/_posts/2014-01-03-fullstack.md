@@ -6,7 +6,7 @@ type: fullstack
 
 title: Full Stack Developer
 
-description:  Like to play both sides?  Connexta is looking for full stack software developers to create and contribute amazing software.
+description:  Love to do it all? Connexta is looking for full stack software developers to create and contribute amazing software.
 
 details: Develop free and open source software, primarily for the Codice Foundation Distributed Data Framework (DDF) project.  Junior and senior positions are available. Salary is commensurate with expertise.
 
@@ -20,6 +20,7 @@ required:
  - Due to government contract requirements, US Citizenship is required 
 
 desired:
+ - Java
  - OSGi
  - Maven
  - JUnit
@@ -52,7 +53,6 @@ desired:
  - Confluence
  - Jenkins
  - SonarQube
- - Ability to obtain US Security Clearance
 
 
 ---
