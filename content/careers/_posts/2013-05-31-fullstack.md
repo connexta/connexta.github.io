@@ -2,7 +2,7 @@
 
 layout: opening
 
-title: Full Stack Developer
+title: Full Stack Developers
 
 type: fullstack
 
