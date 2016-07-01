@@ -6,7 +6,7 @@ title: Full Stack Developer
 
 type: fullstack
 
-description:  Like to play both sides?  Connexta is looking for full stack software developers to create and contribute amazing software. 
+description:  Connexta is looking for full stack software developers to create and contribute amazing software. 
 
 details: This position is physically on site with the customer where access to internal systems permit the installation and integration of newly developed software. In this unique position, you will be able to be a part of the extended Connexta team while developing positive relationships with the core customer team. Junior and senior positions are available. Salary is commensurate with expertise.
 
@@ -18,6 +18,7 @@ required:
  - Modern web development skills in a Mac, Windows, and/or Linux environment
  - Ability to quickly learn and use new technologies
  - Due to government contract requirements, US Citizenship is required 
+
 
 desired:
  - OSGi
