@@ -6,7 +6,7 @@ title: Full Stack Developers
 
 type: fullstack
 
-description:  Connexta is looking for full stack software developers to create and contribute amazing open source software. 
+description:  Love to do it all? Connexta is looking for full stack software developers to create and contribute amazing open source software. 
 
 details: This position is physically on site with the customer where access to internal systems permit the installation and integration of newly developed software. In this unique position, you will be able to be a part of the extended Connexta team while developing positive relationships with the core customer team. Junior and senior positions are available. Salary is commensurate with expertise.
 
