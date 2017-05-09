@@ -2,438 +2,176 @@
 
 ---
 
-
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
-
+<html>
 <head>
-	<meta charset="utf-8">
-	<title>Connexta, LLC</title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-
-	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="/favicon.ico" type="image/x-icon">
-
-	<link rel="stylesheet" href="css/scripts.css">
-	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/base.css">
-	<link rel="stylesheet" href="css/grid.css">
-	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css">
-
-	<!--  Color Stylesheet  -->
-	<link rel="stylesheet" href="css/colors/default.css">
-
-
-	<!-- TEMPLATE STYLESHEETS -->
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/layout.css">
-
-	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	<title>Connexta: Home</title>
+	{% include head.html %} 
 
 </head>
-
 <body>
-	<!--[if lt ie 7]>
-            <p class="browsehappy">you are using an <strong>outdated</strong> browser. please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
 
-    <div class="preloader"><i class="fa fa-spinner spin"></i></div>
-
-	<!-- STANDARD SLIDER -->
-	<div class="slider-wrapper parallax" style="background-image: url('img/slider/bg-1.jpg');">
-		<ul class="main-slider bxslider">
-			<li>
-				<div class="caption">
-					<div class="vertical-align welcome">
-						<h1 class="caption-title cap-anim" data-animation="fadeInDown">Innovation</h1>
-						<p class="caption-subtitle cap-anim" data-animation="fadeInUp">changing the established via new methods, ideas, and products</p>
-					</div><!-- End .vertical-align -->
-				</div><!-- End .caption -->
-			</li>
-			<li>
-				<div class="caption">
-					<div class="vertical-align welcome">
-						<h1 class="caption-title cap-anim" data-animation="fadeInDown">Agility</h1>
-						<p class="caption-subtitle cap-anim" data-animation="fadeInUp">embracing change & evolving processes</p>
-					</div><!-- End .vertical-align -->
-				</div><!-- End .caption -->
-			</li>
-			<li>
-				<div class="caption">
-					<div class="vertical-align welcome">
-						<h1 class="caption-title cap-anim" data-animation="fadeInDown">Transparency</h1>
-						<p class="caption-subtitle cap-anim" data-animation="fadeInUp">open projects, open processes, open collaboration</p>
-					</div>
-				</div>
-			</li>
-		</ul>
-		<a href="#about" class="down"><i class="fa fa-angle-down"></i><span>scroll for more</span></a>
-	</div>
-
-
-    <div class="header">
-		<div class="container">
-
-			<!-- LOGO -->
-			<a href="#" class="logo">
-				<img src="img/logo.png" width="150" alt="Connexta">
-			</a>
-
-			<ul id="sn" class="main_menu">
-				<li><a href="#about">About</a></li>
-				<li><a href="#services">Services</a></li>
-				<li><a href="#careers">Careers</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</div>
-    </div>
-
-
+<div class="content-wrap">
 	
+		{% include header.html %} 
 
-<!-- ABOUT -->
-
-	<section id="about" class="sect-1">
-
+		{% include header-home.html %} 
+		
+	<section class="mission-wrap">
 		<div class="container">
-			<div class="callout">
-				<h3 class="title">Hi, we're Connexta.  Let us introduce ourselves.</h3>
-				<p>We integrate systems and data to create knowledge.
-				<br/>Our tool of choice is the Codice <a href="http://codice.github.io/ddf/">Distributed Data Framework (DDF)</a>.
-				<br/>Three words guide everything we do:</p>
-				<br/>
-			</div>
-
-			<ul class="feature-imgs">
-				<li class="one-third animated" data-animate="flipInY">
-                    <div class="feature-hex">
-                        <img src="img/features/features-1.jpg" alt="feature image 1" />
-                    </div>
-
-					<h4 class="title">Connect</h4>
-					<p>know the tools,
-					<br/>embrace the community,
-					<br/>collaborate</p>
-				</li>
-				<li class="one-third animated middle" data-animate="flipInY" data-animate-delay="1500">
-					<div class="feature-hex">
-                        <img src="img/features/features-2.jpg" alt="feature image 2" />
-                    </div>
-
-					<h4 class="title">Create</h4>
-					<p>invest in people,
-					<br/>develop solutions,
-					<br/>innovate</p>
-				</li>
-				<li class="one-third animated last" data-animate="flipInY" data-animate-delay="2000">
-					<div class="feature-hex">
-                        <img src="img/features/features-3.jpg" alt="feature image 2" />
-                    </div>
-
-					<h4 class="title">Contribute</h4>
-					<p>help those that help
-					<br/>and those that need help,
-					<br/>reciprocate</p>
-				</li>
-			</ul>
-
-		</div>
-	</section>
-
-
-<!-- SERVICES -->
-
-	<section id="services" class="sect-2">
-		<div class="container">
-			<div class="section-title">
-				<h1 class="title">Services</h1>
-				<p class="description">We develop and deliver cutting edge solutions using the latest open source tools and processes.  This includes expertise in several areas:  </p>
-			</div>
-
-			<ul class="features">
-				<li class="one-sixth">
-					<i class="fa fa-gears"></i>
-					<h5 class="title">Enterprise Integration</h5>
-				</li>
-				<li class="one-sixth middle">
-					<i class="fa fa-code"></i>
-					<h5 class="title">Custom Development</h5>
-				</li>
-				<li class="one-sixth middle">
-					<i class="fa fa-stethoscope"></i>
-					<h5 class="title">Support</h5>
-				</li>
-				<li class="one-sixth middle">
-					<i class="fa fa-upload"></i>
-					<h5 class="title">Free & Open Source Software</h5>
-				</li>
-				<li class="one-sixth middle">
-					<i class="fa fa-bolt"></i>
-					<h5 class="title">Agile Processes</h5>
-				</li>
-				<li class="one-sixth last">
-					<i class="fa fa-gavel"></i>
-					<h5 class="title">Government IT</h5>
-				</li>
-			</ul>
-		</div>
-	</section>
-
-<!-- PROCESS -->
-
-	<section id="process" class="sect-4">
-		<div class="container">
-
-			<div class="section-title">
-				<h1 class="title">Engagement Options</h1>
-				<p class="description">There are lots of ways we can help.</p>
-			</div>
-
-			<div class="one-half process-slider-wrap">
-				<ul class="process-slider bxslider">
-					<li>
-						<i class="fa fa-keyboard-o" style="font-size:300px; line-height: 320px"></i>
-					</li>
-					<li>
-						<i class="fa fa-comments-o" style="font-size:300px; line-height: 320px"></i>
-					</li>
-					<li>
-						<i class="fa fa-key" style="font-size:300px; line-height: 320px"></i>
-					</li>
-				</ul>
-			</div>
-
-			<div class="one-half last">
-				<ul class="process-list">
-					<li class="current">
-						<i class="fa fa-code"></i>
-						<h4 class="process-title">Sponsored Development</h4>
-						<p>As project management committee members and committers, we can add features to DDF and related open source projects quickly and efficiently.</p>
-					</li>
-					<li>
-						<i class="fa fa-user"></i>
-						<h4 class="process-title">Consultation</h4>
-						<p>Need an expert to assist your team?  Ours can help.</p>
-					</li>
-					<li>
-						<i class="fa fa-gears"></i>
-						<h4 class="process-title">Turnkey Solutions</h4>
-						<p>We can handle the full lifespan of an integration project, from design through operation or any part in between.</p>
-					</li>
-				</ul>
+			<div class="row">
+				<div class="mission">Connect. Create. Contribute.</div>
+				<div class="mission-description"><div id="rotate"><div><em>Connect</em> people and technology.</div><div><em>Create</em> innovative, high quality solutions.</div><div><em>Contribute</em> back to those we serve.</div></div></div>
 			</div>
 		</div>
 	</section>
 
-<!-- TEAM
-
-	<section class="sect-2">
+	<section class="help-wrap">
 		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>How We Help Our Clients</h2>
+					<p>We provide industry-leading solutions to integrate IT systems using open, extensible technologies.</p>
 
-			<div class="section-title">
-				<h3 class="title">Leadership Team</h3>
-				<p class="description"></p>
-			</div>
+					<picture>
+						 <source srcset="images/mobile-how-we-help.jpg" media="(max-width: 600px)">
+						 <img src ="images/how-we-help.png" alt="How We Help" title="How We Help">
+					</picture>
 
-			<ul class="team">
-				<li class="one-third animated" data-animate="flipInY">
-					<div class="img-wrap">
-						<img src="img/team/team-1.jpg" alt="Andy Goodson">
-						<i class="fa fa-building-o"></i>
-					</div>
-					<span class="team-name">Andy Goodson</span>
-					<span class="team-job">Executive Officer</span>
-					<ul class="social-icons">
-						<li><a href="http://www.linkedin.com/in/agoodson"><i class="fa fa-linkedin"></i></a></li>
-					</ul>
-				</li>
-				<li class="one-third animated middle" data-animate="flipInY" data-animate-delay="1000">
-					<div class="img-wrap">
-						<img src="img/team/team-2.jpg" alt="John Murphy">
-						<i class="fa fa-users"></i>
-					</div>
-					<span class="team-name">John Murphy</span>
-					<span class="team-job">Operations Officer</span>
-					<ul class="social-icons">
-						<li><a href="http://www.linkedin.com/pub/john-murphy/a/96/8a1"><i class="fa fa-linkedin"></i></a></li>
-					</ul>
-				</li>
-				<li class="one-third animated last" data-animate="flipInY" data-animate-delay="1500">
-					<div class="img-wrap">
-						<img src="img/team/team-3.jpg" alt="Michael Menousek">
-						<i class="fa fa-code"></i>
-					</div>
-					<span class="team-name">Michael Menousek</span>
-					<span class="team-job">Technology Officer</span>
-					<ul class="social-icons">
-						<li><a href="http://www.linkedin.com/in/michaelmenousek"><i class="fa fa-linkedin"></i></a></li>
-					</ul>
+					<div class="mobile-how-we-help">
+						<div class="feature-item">
+							<div class="icon-secure"></div>
+							Secure Discovery &amp; Retrieval
+						</div>
 
-				</li>
-			</ul>
+						<div class="decorative-line"></div>
 
+						<div class="feature-item">
+							<div class="icon-interoperability"></div>
+							Coalition Interoperability
+						</div>
 
-		</div>
-	</section>
+						<div class="decorative-line"></div>
 
--->
+						<div class="feature-item">
+							<div class="icon-visualization"></div>
+							Web Based Visualization
+						</div>
 
-<!-- TESTIMONIALS -->
-	<section id="testimonials" class="testimonials parallax">
-		<div class="tint">
-			<div class="container">
+						<div class="decorative-line"></div>
 
-				<ul class="testimonial bxslider">
-					<li>
-						<h1 class="quote">
-							<i class="icon-left-quote"></i>Creativity is the power to connect the seemingly unconnected.<i class="icon-right-quote"></i>
-						</h1>
-						<span class="name">-William Plomer-</span>
-					</li>
-					<li>
-						<h1 class="quote">
-							<i class="icon-left-quote"></i>
-							A community is like a ship; everyone ought to be prepared to take the helm.
-						</h1>
-						<span class="name">-Henrik Ibsen-</span>
-					</li>
-					<li>
-						<h1 class="quote">
-							<i class="icon-left-quote"></i>
-							This world of ours... must avoid becoming a community of dreadful fear and hate, and be, instead, a proud confederation of mutual trust and respect.
-							<i class="icon-right-quote"></i>
-						</h1>
-						<span class="name">-Dwight D. Eisenhower-</span>
-					</li>
-				</ul>
+						<div class="feature-item">
+							<div class="icon-federated"></div>
+							Federated Identity <br/>&amp; Access Management
+						</div>
 
-			</div>
-		</div>
-	</section>
+						<div class="decorative-line"></div>
 
+						<div class="feature-item">
+							<div class="icon-modular"></div>
+							Modular, Open System Architecture
+						</div>
 
+						<div class="decorative-line"></div>
 
-
-<!-- CAREERS -->
-
-	<section id="careers" class="portfolio-wrapper sect-2">
-		<div class="container">
-
-			<div class="section-title">
-				<h1 class="title">Careers</h1>
-				<p class="description">
-Connexta team members contribute to open source projects as a part of the open source community
-and work in a modern development environment.  Each has a spending budget for personal software tools,
-and the liberty to work in the way that works best for the individual.  
-</p>
-			</div>
-			
-			<!-- CATEGORIES -->
-			<ul class="filter-menu">
-				<li class="selected" data-cat="*">All</li>
-				<li data-cat="phx">Phoenix</li>
-				<li data-cat="dc">Northern VA</li>
-				<li data-cat="co">Colorado</li>
-			</ul><!-- End .filter-menu -->
-		</div><!-- End .container -->
-
-		<!-- HOOK FOR PROJECT VIEWER -->
-		<div class="project-wrapper"></div>
-
-		<div class="container">
-			<div class="portfolio clearfix">
-
-    {% for post in site.categories.careers %}
-
-				<div class="port-item {% if forloop.index <= 4 %}showme{% endif %}" data-cat="{{ post.location-code }}">
-					<div class="port-overlay">
-						<img src="img/portfolio/{{ post.type }}.jpg" alt="Career Opportunity">
-						<a class="project-btn" href="{{ post.url }}"><i class="fa fa-search"></i></a>
-					</div>
-					<div class="port-info">
-						<i class="fa fa-code"></i>
-						<span class="port-cat">{{ post.location }}</span>
-						<span class="port-name">{{ post.title }}</span>
+						<div class="feature-item">
+							<div class="icon-enterprise"></div>
+							Enterprise Service Bus <br/>&amp; Reliable Messaging
+						</div>
 					</div>
 				</div>
-    {% endfor %}
-
-
 			</div>
 		</div>
-
-		<a href="#" id="load-more" class="button outline">Load more</a>
 	</section>
-	
 
-<!-- CONTACT -->
+	<section class="support-wrap">
+		<div class="container"> 
+			<div class="row">
+				<div class="col-sm-12">
+					<h2>Featured Communities We Support</h2>
 
-	<section id="contact" class="sect-4">
+					<div class="support-row">
+						<div class="support-cell">
+							<img class="support-logo" src="images/logo-dmo.png" alt="DMO" title="DMO">
+
+							<div class="support-description">
+								<h4>DMO DIB</h4>
+								<p>DCGS Integration Backbone</p>
+							</div>
+						</div>
+
+						<div class="support-cell">
+							<img class="support-logo" src="images/logo-nga.png" alt="NGA" title="NGA">
+
+							<div class="support-description">
+								<h4>NGA</h4>
+								<p>Geospatial Discovery</p>
+							</div>
+						</div>
+
+						<div class="support-cell">
+							<img class="support-logo" src="images/logo-afdcgs.png" alt="AF DCGS" title="AF DCGS">
+
+							<div class="support-description">
+								<h4>AF DCGS</h4>
+								<p>Agile Release Trains</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="support-row">
+						<div class="support-cell">
+							<img class="support-logo" src="images/logo-dcgsa.png" alt="DCGS-A" title="DCGS-A">
+
+							<div class="support-description">
+								<h4>DCGS-A</h4>
+								<p>Agile Software Development</p>
+							</div>
+						</div>
+
+						<div class="support-cell">
+							<img class="support-logo" src="images/logo-ousdi.png" alt="OUSD-I" title="OUSD-I">
+
+							<div class="support-description">
+								<h4>OUSD-I</h4>
+								<p>DI2E</p>
+							</div>
+						</div>
+						
+						<div class="support-cell">
+							<img class="support-logo" src="images/logo-leidos-uk.png" alt="LEIDOS UK" title="LEIDOS UK">
+
+							<div class="support-description">
+								<h4>UK MOD</h4>
+								<p>Imagery Exploitation Programme</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="how-wrap">
 		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<h2>How We Do It</h2>
+					<p>We are the primary contributor to the open source Distributed Data Framework (DDF) project, and we provide custom development and technical support for DDF installations.</p>
 
-			<div class="section-title">
-				<h3 class="title">Contact Us</h3>
-				<p class="description">Interested in engaging our services?  Want to join our team?  Drop us a line and we'll get back to you.</p>
+					<picture>
+						<source srcset="images/mobile-logo-grid.png" media="(max-width: 600px)">
+						<img src="images/logo-grid.png" alt="Logos of open source software we support" title="logos of open source software we support">
+					</picture>
+				</div>
 			</div>
-			<form method="post" action="http://getsimpleform.com/messages?form_api_token=d83cb8ab82842ada51450fdb47f3fd57" class="contact-form">
-				<div class="one-half animated" data-animate="fadeInDown">
-					<span>
-						<input type="text" name="name" id="name" placeholder="name">
-					</span>
-					<span>
-						<input type="email" name="email" id="email" placeholder="email">
-					</span>
-					<span>
-						<input type="text" name="subject" id="subject" placeholder="subject">
-					</span>
-				</div>
-
-				<div class="one-half last animated" data-animate="fadeInDown" data-animate-delay="1000">
-					<span>
-						<textarea name="message" id="message" placeholder="message"></textarea>
-					</span>
-				</div>
-				<button id="submit" type="submit" class="contact-button animated" data-animate="fadeInDown" data-animate-delay="1000">Send Message</button>
-			</form>
-
 		</div>
 	</section>
 
+	<!-- include footer-contact.html %} -->
+	{% include footer.html %} 
 
-	<section class="footer">
-		<img class="footer-logo" src="img/logo.png" width="229" alt="Connexta">
-		<div class="address">
-			<br/>1860 North 95th Lane, Suite 325
-			<br/>Phoenix, AZ 85037
-			<br/>+1 (602) 714-1459
-		</div>
-
-		<ul class="social-icons">
-			<li><a href="http://www.linkedin.com/company/connexta-llc"><i class="fa fa-linkedin"></i></a></li>
-			<li><a href="https://github.com/connexta/"><i class="fa fa-github"></i></a></li>
-			<li><a href="http://www.facebook.com/connexta"><i class="fa fa-facebook"></i></a></li>
-		</ul>
-
-		<div class="copy">© 2014 Connexta, LLC</div>
-	</section>
-
-	<!-- JQUERY -->
-    <script src="js/vendor/jquery.min.js"></script>
-
-	<!-- PLUGINS -->
-    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-    <script src="js/scripts.js"></script>
-    <script src="js/plugins.js"></script>
-
-	<!-- THEME SCRIPT -->
-    <script src="js/main.js"></script>
-
+</div>
 
 </body>
 
