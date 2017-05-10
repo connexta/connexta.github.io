@@ -34,7 +34,7 @@
 
  $(document).ready(function() {
       $('#rotate').rotaterator({fadeSpeed:1000, pauseSpeed:1000});
-      $('#main-heading-rotator').rotaterator({fadeSpeed:1000, pauseSpeed:8000});
+      $('#main-heading-rotator').rotaterator({fadeSpeed:1000, pauseSpeed:10000});
 
       $(window).load(function() {
         $('.flexslider').flexslider({
