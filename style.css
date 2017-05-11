@@ -32,14 +32,14 @@ html {
 	font-family: 'Open Sans', sans-serif;
 	background-color: #ffffff;
 	background-color: transparent;
-	color: #869297;
+	color: #333333;
 }
 
 body {
 	/* TO DO - Figure where scaffolding.less is being called from, and why it's overrideing body font */
-	font-size: 16px;
-	font-size: 1.6rem;
-	color: #3d4249;
+	font-size: 18px;
+	font-size: 1.8rem;
+	color: #333333;
 	line-height: 1.5;
 	font-weight: 300;
 }
@@ -74,9 +74,9 @@ h3 {
 }
 
 p {
-	color: #9a9b9c;
-	font-size: 16px;
-	font-size: 1.6rem;
+	color: #333333;
+	font-size: 18px;
+	font-size: 1.8rem;
 	margin: 15px 0 30px 0;
 }
 
@@ -259,9 +259,9 @@ button:hover,
 }
 
 .mobile-header p {
-	font-size: 16px;
-	font-size: 1.6rem;
-	color: #869297;
+/*	font-size: 16px;
+	font-size: 1.6rem;*/
+	/*color: #869297;*/
 	line-height: 1.6;
 }
 
@@ -346,8 +346,8 @@ button:hover,
 
 	.proc-flex {
 		max-width: 535px;
-		font-size: 16px;
-		font-size: 1.6rem;
+		font-size: 18px;
+		font-size: 1.8rem;
 		margin-bottom: 40px;
 		margin-left: 30px;
 		position: absolute;
@@ -366,9 +366,9 @@ button:hover,
 	}
 
 	.proc-flex p {
-		font-size: 16px;
-		font-size: 1.6rem;
-		color: #869297;
+	/*	font-size: 16px;
+		font-size: 1.6rem;*/
+		/*color: #869297;*/
 		line-height: 1.5;
 		margin-bottom: 10px;
 	}
@@ -734,7 +734,7 @@ ul.navbar-nav > li > a:hover {
 
 .mission-description {
 	font-weight: light;
-	font-size: 16px; 
+	/*font-size: 16px; */
 	font-size: 1.6rem;
 }
 
@@ -771,10 +771,10 @@ ul.navbar-nav > li > a:hover {
 .help-wrap p {
 	display: block;
 	margin: 0 auto;
-	color: #869297;
+	/*color: #869297;*/
 /*	max-width: 700px; */
-	font-size: 16px;
-	font-size: 1.6rem;
+/*	font-size: 16px;
+	font-size: 1.6rem;*/
 	margin-bottom: 25px;
 }
 
@@ -949,9 +949,9 @@ ul.navbar-nav > li > a:hover {
 }
 
 .support-cell p {
-	color: #869297;
-	font-size: 16px;
-	font-size: 1.6rem;
+	/*color: #869297;*/
+	/*font-size: 16px;
+	font-size: 1.6rem;*/
 	line-height: 1;
 	vertical-align: middle;
 }
@@ -1049,8 +1049,8 @@ ul.navbar-nav > li > a:hover {
 	margin: 0 auto;
 	color: #ffffff;
 	max-width: 700px; 
-	font-size: 16px;
-	font-size: 1.6rem;
+/*	font-size: 16px;
+	font-size: 1.6rem;*/
 	margin-bottom: 25px;
 }
 
@@ -1095,7 +1095,7 @@ ul.navbar-nav > li > a:hover {
 	font-size: 24px;
 	font-size: 2.4rem;
 	max-width: 1000px; 
-	color: #869297;
+	/*color: #869297;*/
 	text-align: center;
 	display: block;
 	margin: 0 auto;
