@@ -1640,9 +1640,9 @@ ul.navbar-nav > li > a:hover {
 	text-align: center;
 }
 
-.footer-contact-info {
+/*.footer-contact-info {
 	margin-bottom: 50px;
-}
+}*/
 
 .footer-contact-form {
 	max-width: 480px;
@@ -1659,7 +1659,7 @@ ul.navbar-nav > li > a:hover {
 	}
 }
 
-@media all and (min-width: 992px) {
+/*@media all and (min-width: 992px) {
 	.footer-contact-wrap h2 {
 		text-align: right;
 	}
@@ -1667,7 +1667,7 @@ ul.navbar-nav > li > a:hover {
 	.footer-contact-wrap p {
 		text-align: right;
 	}
-}
+}*/
 
 /*
 =======================================================================================
