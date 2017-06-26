@@ -19,14 +19,46 @@
 
 <section>
 	<div class="container">
-		<form action="https://liveformhq.com/form/934055ac-e239-40f6-8345-e448192d73ec" method="POST" accept-charset="utf-8">
+
+	<script>
+		$(function(){
+  // intercept the form submission
+  $("#contact-form").on("submit", function(e) {
+      e.preventDefault(); // stop the form from being submitted
+      // make an ajax POST request to the form's action
+      $.ajax({
+          type: "POST",
+          url: $(this).attr("action"),      // use the form's action attribute as the endpoint
+          data: $(this).serialize(),        // use the data from the form
+          headers:
+          {
+              "Accept": "application/json"  // this makes the server send you a JSON response
+          },
+          success: function(response)       // handle the successful submission of your POST
+          {
+              console.log(response);        // response contains the form submission that was just made
+              // alert("Thank you for your submission, we'll get back to you soon :)");
+              $("#contact-form")[0].reset();// reset the form
+              $("#messages").text("Thank you for your submission. We'll get back to you soon");
+          },
+      });
+  });
+});
+	</script>
+
+
+		<div id="messages">
+
+		</div>
+
+		<form action="https://liveformhq.com/form/934055ac-e239-40f6-8345-e448192d73ec" method="POST" accept-charset="utf-8" id="contact-form">
 		  <input type="hidden" name="_utf8" value="✓">
 
 		  <!--
 		    NOTE: This is an optional field, if your form has a field named '_redirect',
 		    The user will be redirected to this page after the submission is saved
 		  -->
-		  <input type="hidden" value="https://mysite.com/redirect_thank_you" name="_redirect" />
+		<!--   <input type="hidden" value="https://mysite.com/redirect_thank_you" name="_redirect" /> -->
 
 		  <label for="name">Name</label>
 		  <input type="text" id="name" name="name"> <br />
@@ -34,7 +66,14 @@
 		  <label for="email">Email</label>
 		  <input type="text" id="email" name="email"> <br />
 
-		  <button type="submit">Submit</button>
+		  <label for="message">Message</label>
+		  <textarea id="message" name="message"></textarea>
+
+		  <!-- to add recaptcha, add the correct site key and uncomment the section below -->
+		   <div class="g-recaptcha" data-sitekey="6LfT4CAUAAAAALSPFLMAxB1X6qJnw4QkaMyiF7PB" data-callback="enableSubmit"> </div>
+
+		  <button type="submit" id="form-sumbit" disabled>Send Message</button>
+
 		</form>
 	</div>
 </section>

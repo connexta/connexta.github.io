@@ -11,6 +11,17 @@
 		woopra.track();
 	</script>
 	<!-- End of Woopra Code -->
+
+	<!-- Google ReCaptcha -->
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+	<script>
+		function enableSubmit() {
+		  var btn = document.getElementById('form-submit');
+		  btn.disabled = false;
+		  btn.title = '';
+		}
+	</script>
+
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
 	<!-- <link rel="stylesheet" type="text/css" href="flexslider/flexslider.css"> -->	
 	<link rel="stylesheet" type="text/css" href="style.css">
