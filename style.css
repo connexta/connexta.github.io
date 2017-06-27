@@ -113,6 +113,7 @@ p {
 
 input[type=text],
 input[type=email],
+input[type=phone],
 textarea {
 	width: 100%; 
 	padding: 10px;
