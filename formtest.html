@@ -7,7 +7,7 @@
 <head>
 	<title>Connexta: About Us </title>
 	{% include head.html %} 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/parallax.js"></script>
 </head>
 
@@ -20,36 +20,33 @@
 <section>
 	<div class="container">
 
-	<script>
-		$(function(){
-  // intercept the form submission
-  $("#contact-form").on("submit", function(e) {
-      e.preventDefault(); // stop the form from being submitted
-      // make an ajax POST request to the form's action
-      $.ajax({
-          type: "POST",
-          url: $(this).attr("action"),      // use the form's action attribute as the endpoint
-          data: $(this).serialize(),        // use the data from the form
-          headers:
-          {
-              "Accept": "application/json"  // this makes the server send you a JSON response
-          },
-          success: function(response)       // handle the successful submission of your POST
-          {
-              console.log(response);        // response contains the form submission that was just made
-              // alert("Thank you for your submission, we'll get back to you soon :)");
-              $("#contact-form")[0].reset();// reset the form
-              $("#messages").text("Thank you for your submission. We'll get back to you soon");
-          },
-      });
-  });
-});
-	</script>
+		<script>
+			$(function(){
+	  			// intercept the form submission
+			    $("#contact-form").on("submit", function(e) {
+			        e.preventDefault(); // stop the form from being submitted
+			        // make an ajax POST request to the form's action
+			        $.ajax({
+			            type: "POST",
+			            url: $(this).attr("action"),      // use the form's action attribute as the endpoint
+			            data: $(this).serialize(),        // use the data from the form
+			            headers:
+			            {
+			               "Accept": "application/json"  // this makes the server send you a JSON response
+			            },
+			            success: function(response)       // handle the successful submission of your POST
+			            {
+			               console.log(response);     // response contains the form submission that was just made
 
+			               $("#contact-form")[0].reset();// reset the form
+			               $("#messages").text("Thank you for your submission. We'll get back to you soon");
+			            },
+			        });
+			    });
+			});
+		</script>
 
-		<div id="messages">
-
-		</div>
+		<div id="messages"></div>
 
 		<form action="https://liveformhq.com/form/934055ac-e239-40f6-8345-e448192d73ec" method="POST" accept-charset="utf-8" id="contact-form">
 		  <input type="hidden" name="_utf8" value="✓">
@@ -72,15 +69,13 @@
 		  <!-- to add recaptcha, add the correct site key and uncomment the section below -->
 		   <div class="g-recaptcha" data-sitekey="6LfT4CAUAAAAALSPFLMAxB1X6qJnw4QkaMyiF7PB" data-callback="enableSubmit"> </div>
 
-		  <button type="submit" id="form-sumbit" disabled>Send Message</button>
+		  <button type="submit" id="form-sumbit">Send Message</button>
 
 		</form>
 	</div>
 </section>
 
-
-
-	{% include footer.html %} 
+{% include footer.html %} 
 
 </div><!-- /content-wrap -->
 
