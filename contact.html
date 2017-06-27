@@ -25,19 +25,72 @@
 	</section>
 
 	<section class="contact-main-wrap">
-		<div class="main-social-media">
-			<a href="http://www.linkedin.com/company/connexta-llc" target="_blank" class="main-social-icon main-linkedin" title="See us on LinkedIn"></a>
-			<a href="https://github.com/connexta/" target="_blank" class="main-social-icon main-github" title="See us on Github"></a>
-			<a href="http://www.facebook.com/connexta" target="_blank" class="main-social-icon main-facebook" title="See us on Facebook"></a>
-		</div>
+		<div class="container">
+			<div class="row">
+				<div class="main-social-media">
+					<a href="http://www.linkedin.com/company/connexta-llc" target="_blank" class="main-social-icon main-linkedin" title="See us on LinkedIn"></a>
+					<a href="https://github.com/connexta/" target="_blank" class="main-social-icon main-github" title="See us on Github"></a>
+					<a href="http://www.facebook.com/connexta" target="_blank" class="main-social-icon main-facebook" title="See us on Facebook"></a>
+				</div>
 
-		<p class="contact-info">
-			Call us at <strong>602-714-1459</strong> or fill out the form below to send us a message.
-		</p>
+				<p class="contact-info">
+					Call us at <strong>602-714-1459</strong> or fill out the form below to send us a message.
+				</p>
 
-		<div class="email-form">
-			<script type="text/javascript" src="https://form.jotform.com/jsform/70296347718162"></script>
-		</div>
+				<!-- <div class="email-form">
+					<script type="text/javascript" src="https://form.jotform.com/jsform/70296347718162"></script>
+				</div> -->
+
+				<script>
+					$(function(){
+			  			// intercept the form submission
+					    $("#contact-form").on("submit", function(e) {
+					        e.preventDefault(); // stop the form from being submitted
+					        // make an ajax POST request to the form's action
+					        $.ajax({
+					            type: "POST",
+					            url: $(this).attr("action"),      // use the form's action attribute as the endpoint
+					            data: $(this).serialize(),        // use the data from the form
+					            headers:
+					            {
+					               "Accept": "application/json"  // this makes the server send you a JSON response
+					            },
+					            success: function(response)       // handle the successful submission of your POST
+					            {
+					               console.log(response);     // response contains the form submission that was just made
+
+					               $("#contact-form")[0].reset();// reset the form
+					               $("#messages").text("Thank you for your submission. We'll get back to you soon");
+					            },
+					        });
+					    });
+					});
+				</script>
+
+				<div class="email-form">
+					<div id="messages"></div>
+
+					<form action="https://liveformhq.com/form/934055ac-e239-40f6-8345-e448192d73ec" method="POST" accept-charset="utf-8" id="contact-form">
+						<input type="hidden" name="_utf8" value="✓">
+
+					    <label for="name">Name</label>
+						<input type="text" id="name" name="name"> <br />
+
+						<label for="email">Email</label>
+						<input type="text" id="email" name="email"> <br />
+
+						<label for="message">Message</label>
+						<textarea id="message" name="message"></textarea>
+
+						<!-- recaptcha -->
+						<div class="g-recaptcha" data-sitekey="6LfT4CAUAAAAALSPFLMAxB1X6qJnw4QkaMyiF7PB" data-callback="enableSubmit"> </div>
+
+						<button type="submit" id="form-submit">Send Message</button>
+
+					</form>
+				</div>
+			</div>
+		</div>	
 	</section>
 
 	<section class="offices-wrap">

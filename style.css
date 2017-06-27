@@ -122,6 +122,11 @@ textarea {
 	border: solid 1px #c3c8ca;
 }
 
+.g-recaptcha {
+	width: 304px;
+	margin-bottom: 35px;
+}
+
 textarea {
 	-webkit-appearance: none;
 	background: #f7fafb;
@@ -1539,6 +1544,10 @@ ul.navbar-nav > li > a:hover {
 .email-form {
 	margin: 0 auto;
 	max-width: 480px;
+}
+
+#form-submit {
+	width: 100%;
 }
 
 .offices-wrap {
