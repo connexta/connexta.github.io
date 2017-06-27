@@ -60,7 +60,7 @@
 					               console.log(response);     // response contains the form submission that was just made
 
 					               $("#contact-form")[0].reset();// reset the form
-					               $("#messages").text("Thank you for your submission. We'll get back to you soon");
+					               $("#messages").show().text("Thank you for your submission. We'll get back to you soon");
 					            },
 					        });
 					    });
@@ -68,7 +68,7 @@
 				</script>
 
 				<div class="email-form">
-					<div id="messages"></div>
+					<div id="messages" style="display: none"></div>
 
 					<form action="https://liveformhq.com/form/934055ac-e239-40f6-8345-e448192d73ec" method="POST" accept-charset="utf-8" id="contact-form">
 						<input type="hidden" name="_utf8" value="✓">
