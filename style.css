@@ -580,16 +580,33 @@ ul.navbar-nav > li > a:hover {
 }			
 
 .help-wrap p {
-	display: block;
-	margin: 0 auto;
+	/*display: block;
+	margin: 0 auto;*/
 	/*color: #869297;*/
 /*	max-width: 700px; */
 /*	font-size: 16px;
 	font-size: 1.6rem;*/
-	margin-bottom: 25px;
+	/*margin-bottom: 25px;*/
 }
 
-.mobile-how-we-help {
+.help-bullets {
+	text-align: left;
+}
+
+.bullet {
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.bullet-icon {
+	width: 20%;
+}
+
+.bullet-text {
+	width: 80%; 
+}
+/*.mobile-how-we-help {
 	display: block;
 }
 
@@ -663,10 +680,10 @@ ul.navbar-nav > li > a:hover {
 	background-position: 0 -247px;
 	margin: 0 auto;
 	margin-bottom: 7px;
-}
+}*/
 
 /* Optimize for larger screens */
-@media all and (min-width: 720px) {
+/*@media all and (min-width: 720px) {
 	.help-wrap {
 		padding: 100px 10px;
 		background: #ffffff;
@@ -687,7 +704,7 @@ ul.navbar-nav > li > a:hover {
 	.mobile-how-we-help {
 			display: none;
 	}
-}
+}*/
 
 /*
 =======================================================================================
