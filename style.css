@@ -6,7 +6,49 @@
 
   Header Color: #516f84
 
-  */
+  NOTES: This website is built on bootstrap. 
+
+
+
+  TABLE OF CONTENTS
+
+  	## GENERAL TYPOGRAPHY
+
+  	## FORMS
+
+  	## GENERAL TYPOGRAPHY
+
+  	## HOMEPAGE PROCLOMATION AND MAP
+
+  	## NAVIGATION
+
+  	## HOMEPAGE MISSION
+
+  	## HOMEPAGE HOW WE HELP
+
+  	## HOMEPAGE WHO WE SUPPORT
+
+  	## HOMEPAGE HOW WE DO IT
+
+  	## NEWS
+
+  	## LEADERSHIP
+
+  	## CSR SOCIAL RESPONSIBILITY
+
+  	## PRODUCTS AND SOLUTIONS PAGE
+
+  	## CAREERS PAGE
+
+  	## CONTACT PAGE AND CONTACT FORM FOOTER
+
+  	## FOOTER CONTACT
+
+  	## ABOUT PAGE
+
+  	## FOOTER
+
+ */
 
 
 
@@ -579,16 +621,6 @@ ul.navbar-nav > li > a:hover {
 	margin-top: 0px;
 }			
 
-.help-wrap p {
-	/*display: block;
-	margin: 0 auto;*/
-	/*color: #869297;*/
-/*	max-width: 700px; */
-/*	font-size: 16px;
-	font-size: 1.6rem;*/
-	/*margin-bottom: 25px;*/
-}
-
 .help-bullets {
 	text-align: left;
 }
@@ -899,9 +931,81 @@ ul.navbar-nav > li > a:hover {
 }
 
 
+
+
 /*
 =======================================================================================
-	PRODUCTS PAGE SOLUTIONS PAGE
+	NEWS
+=======================================================================================
+*/
+
+.news-header-wrap {
+	padding: 50px 10px;
+	color: #ffffff;
+	background: #315a72;
+	text-align: center;
+	background: url('images/header-careers.jpg');
+	background-position: center center;
+	background-size: cover;
+}
+
+
+
+
+/*
+=======================================================================================
+	LEADERSHIP
+=======================================================================================
+*/
+
+.leadership-header-wrap {
+	padding: 50px 10px;
+	color: #ffffff;
+	background: #315a72;
+	text-align: center;
+	background: url('images/header-careers.jpg');
+	background-position: center center;
+	background-size: cover;
+}
+
+section.leadership {
+	padding: 100px 0;
+}
+
+.leader {
+	background-color: #f1f1f1;
+	padding: 40px 20px;
+	margin-bottom: 35px;
+}
+
+.leader-image img {
+	border-radius: 50%
+}
+
+
+
+/*
+=======================================================================================
+	CSR SOCIAL RESPONSIBILITY
+=======================================================================================
+*/
+
+.csr-header-wrap {
+	padding: 50px 10px;
+	color: #ffffff;
+	background: #315a72;
+	text-align: center;
+	background: url('images/header-careers.jpg');
+	background-position: center center;
+	background-size: cover;
+}
+
+
+
+
+/*
+=======================================================================================
+	PRODUCTS AND SOLUTIONS PAGE
 =======================================================================================
 */
 
