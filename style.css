@@ -516,6 +516,7 @@ ul.navbar-nav > li > a:hover {
 
 	.nav-wrapper {
 		margin-top: 0;
+		margin-right: -20px;
 	}
 
 	.navbar > .container {
@@ -542,7 +543,7 @@ ul.navbar-nav > li > a:hover {
 
 
 	ul.nav > li > a {
-		padding: 0px 0px 0px 40px;
+		padding: 5px 20px;
 		color: #666666;
 		text-transform: uppercase;
 		transition: .2s;
