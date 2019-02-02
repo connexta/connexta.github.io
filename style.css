@@ -1035,11 +1035,11 @@ section.leadership {
 */
 
 .csr-header-wrap {
-	padding: 50px 10px;
+	padding: 100px 10px;
 	color: #ffffff;
 	background: #315a72;
 	text-align: center;
-	background: url('images/header-careers.jpg');
+	background: url('images/header-csr.jpg');
 	background-position: center center;
 	background-size: cover;
 }
@@ -1111,7 +1111,7 @@ section.leadership {
 	color: #ffffff;
 	background: #315a72;
 	text-align: center;
-	background: url('images/header-careers.jpg');
+	background: url('images/header-csr.jpg');
 	background-position: center center;
 	background-size: cover;
 }
