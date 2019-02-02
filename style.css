@@ -22,6 +22,8 @@
 
   	## NAVIGATION
 
+  	## PAGE HEADINGS
+
   	## HOMEPAGE MISSION
 
   	## HOMEPAGE HOW WE HELP
@@ -558,6 +560,36 @@ ul.navbar-nav > li > a:hover {
 	}
 }
 
+/*
+=======================================================================================
+	PAGE HEADINGS
+=======================================================================================
+*/
+
+
+/* No image, text-based header */
+section.std-title-heading {
+	background: #516f84;
+}
+
+section.std-title-heading > .container > h2 {
+	color: #ffffff;
+	font-size: 20px;
+	font-size: 2rem;
+}
+
+
+/* Header for CSR Page */
+.csr-header-wrap {
+	padding: 100px 10px;
+	color: #ffffff;
+	background: #315a72;
+	text-align: center;
+	background: url('images/header-csr.jpg');
+	background-position: center center;
+	background-size: cover;
+}
+
 
 /*
 =======================================================================================
@@ -1034,15 +1066,6 @@ section.leadership {
 =======================================================================================
 */
 
-.csr-header-wrap {
-	padding: 100px 10px;
-	color: #ffffff;
-	background: #315a72;
-	text-align: center;
-	background: url('images/header-csr.jpg');
-	background-position: center center;
-	background-size: cover;
-}
 
 .events {
 	display: flex;
