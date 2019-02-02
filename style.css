@@ -233,10 +233,10 @@ button:hover,
 }
 
 .logo {
-	margin: 10px 0;
+	margin: 20px 0;
 	display: block;
-	width: 118px;
-	height: 25px;
+	width: 163px;
+	height: 35px;
 	background: url('images/connexta-logo.png');
 	background-size: contain;
 	cursor: pointer;
@@ -251,7 +251,6 @@ button:hover,
 	width: 100%; 
 	/*padding: 10px 0px;	*/
 	background-color: #ffffff;
-	opacity: .95;
 }
 
 .header-main.row {
@@ -533,7 +532,7 @@ ul.navbar-nav > li > a:hover {
 		float: right;
 		text-align: right;
 		background: transparent;
-		margin-top: 10px;
+		margin-top: 23px;
 	}
 
 	ul.navbar-nav > li {
@@ -548,6 +547,7 @@ ul.navbar-nav > li > a:hover {
 		text-transform: uppercase;
 		transition: .2s;
 		border-bottom: 0px;
+		font-size: 1.4rem;
 	}
 
 	ul.nav > li > a:hover {
