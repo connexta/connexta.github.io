@@ -99,6 +99,20 @@ section.dark {
 	background-color: #516f84;
 }
 
+.no-top-margin
+ {
+	margin-top: 0px;
+}
+
+.no-bottom-margin {
+	margin-bottom: 0px;
+}
+
+.no-margin {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
 
 
 /*
@@ -106,6 +120,9 @@ section.dark {
 	GENERAL TYPOGRAPHY
 =======================================================================================
 */
+
+
+/* BASIC TYPOGTAPHY */
 
 html {
 	font-size: 62.5%;
@@ -144,6 +161,44 @@ h2 {
 	margin: 15px 0;
 }
 
+
+h3 {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: normal;
+	color: #516f84;
+	font-size: 18px; 
+	font-size: 1.8rem;
+	margin: 15px 0;
+}
+
+p {
+	color: #333333;
+	font-size: 16px;
+	font-size: 1.6rem;
+	margin: 15px 0;
+}
+
+p:last-child {
+	padding-bottom: 0px;
+}
+
+p.section-description {
+	text-align: center;
+	max-width: 720px;
+	margin: 0 auto 35px auto;
+}
+
+p.section-description-light {
+	text-align: center;
+	color: #ffffff;
+	font-weight: 400;
+	max-width: 720px;
+	margin: 0 auto 35px auto;
+}
+
+
+/* TYPOGRAPHY MODIFIERS */ 
+
 h2.section-title {
 	font-size: 30px;
 	font-size: 3rem;
@@ -174,49 +229,9 @@ h2.section-title-light {
 	}
 }
 
-h3 {
-	font-family: 'Ubuntu', sans-serif;
-	font-weight: normal;
-	color: #516f84;
-	font-size: 18px; 
-	font-size: 1.8rem;
-	margin: 15px 0;
-}
-
-p {
-	color: #333333;
-	font-size: 16px;
-	font-size: 1.6rem;
-	padding: 15px 0;
-}
-
-p:last-child {
-	padding-bottom: 0px;
-}
-
-p.section-description {
-	text-align: center;
-	max-width: 720px;
-	margin: 0 auto 35px auto;
-}
-
-p.section-description-light {
-	text-align: center;
-	color: #ffffff;
-	font-weight: 400;
-	max-width: 720px;
-	margin: 0 auto 35px auto;
-}
-
-h1.light,
-h2.light,
-h3.light,
-h4.light,
-h5.light,
-p.light {
+.light {
 	color: #ffffff;
 }
-
 
 
 /*
@@ -894,7 +909,7 @@ section.mission-wrap {
 .leader {
 	background-color: #f1f1f1;
 	padding: 40px 20px;
-	margin-bottom: 35px;
+	margin-top: 35px;
 }
 
 .leader h2 {
@@ -926,7 +941,7 @@ section.mission-wrap {
 	display: flex;
 
 	justify-content: space-between;
-	margin-top: 50px;
+	margin-top: 30px;
 }
 
 .upcoming-events-wrapper {
@@ -985,7 +1000,7 @@ section.mission-wrap {
 	color: #ffffff;
 	background: #315a72;
 	text-align: center;
-	background: url('images/header-csr.jpg');
+	background: url('images/header-solutions.jpg');
 	background-position: center center;
 	background-size: cover;
 }
@@ -1134,11 +1149,11 @@ section.mission-wrap {
 */
 
 .contact-header-wrap {
-	padding: 50px 10px;
+	padding: 100px 10px;
 	color: #ffffff;
 	background: #315a72;
 	text-align: center;
-	background: url('images/header-careers.jpg');
+	background: url('images/header-contact.jpg');
 	background-position: center center;
 	background-size: cover;
 }
@@ -1226,7 +1241,7 @@ section.mission-wrap {
 @media all and (min-width:768px) {
 
 	.contact-header-wrap {
-		padding: 70px 10px;
+		padding: 130px 10px;
 	}
 
 	.contact-main-wrap {
@@ -1336,6 +1351,7 @@ section.mission-wrap {
 }
 
 .value-statement h2 {
+	margin-top: 0px;
 	color: #ffffff;
 	text-align: center;
 }
