@@ -134,8 +134,8 @@ html {
 
 body {
 	/* TO DO - Figure where scaffolding.less is being called from, and why it's overrideing body font */
-	font-size: 18px;
-	font-size: 1.8rem;
+	font-size: 16px;
+	font-size: 1.6rem;
 	color: #333333;
 	line-height: 1.5;
 	font-weight: 300;
@@ -1434,10 +1434,10 @@ section.mission-wrap {
 	color: #ffffff;
 }
 
-.our-story {
+/*.our-story {
 	max-width: 1100px;
 	margin: 0 auto;
-}
+}*/
 
 .our-story-images-flexbox {
 	display: flex;
