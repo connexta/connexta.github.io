@@ -877,16 +877,25 @@ section.mission-wrap {
 =======================================================================================
 */
 
+.featured-row-wrapper {
+	display: flex; 
+	flex-direction: column;
+}
+
 .featured-row {
 	width: 100%;
 }
 
 .featured-cell {
 	display: flex;
+	align-items: center;
 	width: 100%;
 	max-width: 360px;
 	margin: 0 auto;
 	margin-bottom: 25px;
+	border: solid 1px #e1e1e1;
+	background: #e4e8ea;
+	padding: 10px;
 } 
 
 .featured-cell p {
@@ -930,22 +939,12 @@ section.mission-wrap {
 
 .featured-description {
 	text-align: left;
-	padding-top: 7px;
 }
 
 @media all and (min-width: 920px) {
-	.featured-row {
-		display: table;
-		margin-top: 35px;
-		vertical-align: middle;
-	}
 
-	.featured-cell {
+	.featured-row-wrapper {
 		flex-direction: row;
-		float: left;
-		max-width: 100%;
-		width: 33%;
-		vertical-align: middle;
 	}
 
 	.featured-logo {
@@ -967,7 +966,6 @@ section.mission-wrap {
 		margin-bottom: 5px;
 		line-height: 1;
 		vertical-align: middle;
-		margin-top: 18px;
 	}
 
 	.featured-description {
