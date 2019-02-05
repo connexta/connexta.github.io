@@ -233,6 +233,10 @@ h2.section-title-light {
 	color: #ffffff;
 }
 
+.text-center {
+	text-align: center;
+}
+
 
 /*
 =======================================================================================
@@ -351,16 +355,7 @@ button:hover,
 =======================================================================================
 */
 
-.header-wrap {
-	background: url('images/connexta-hq.jpg');
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-color: #eaeff3;
-	min-height: 200px;
-	height: 200px;
-	z-index: -50;
-}
+
 
 .proc-flex-wrap {
 	display: none;
@@ -408,23 +403,6 @@ button:hover,
 
 @media all and (min-width: 768px) {
 
-	.mobile-header {
-		display: none;
-	}
-
-	.header-wrap {
-		background: url('images/connexta-hq.jpg');
-		background-size: cover;
-		background-position: center center;
-		background-repeat: no-repeat;
-		min-height: 540px;
-		height: 540px;
-	}
-
-	.header-wrap > .container,
-	.header-wrap > .container > .row {
-		height: 494px;
-	}
 
 	.proc-flex-wrap {
 		display: block;
@@ -434,17 +412,17 @@ button:hover,
 	}
 
 	.proc-flex {
-		max-width: 535px;
+		max-width: 435px;
 		font-size: 18px;
 		font-size: 1.8rem;
-		margin-bottom: 25px;
-		margin-left: 15px;
-		padding: 20px 20px 10px 20px;
+		margin-bottom: 45px;
+	/*	margin-left: 15px;*/
+		/*padding: 20px 20px 10px 20px;*/
 		position: absolute;
 		bottom: 0;
 		left: 0;
-		background: #00aad3;
-		opacity: .95;
+		/*background: #00aad3;*/
+		/*opacity: .95;*/
 	}
 
 	.proc-flex h2 {
@@ -635,7 +613,7 @@ ul.navbar-nav > li > a:hover {
 
 /*
 =======================================================================================
-	PAGE HEADINGS
+	PAGE HEADINGS - background images and heights
 =======================================================================================
 */
 
@@ -651,18 +629,177 @@ section.std-title-heading > .container > h2 {
 	font-size: 2rem;
 }
 
+section.graphic-title-heading {
+	background #516f84; /* fallback color */ 
+	background-position: center center;
+	background-size: cover;
+	text-align: center;
+}
+
+/* Home Page heading */
+.header-wrap {
+	background: url('images/connexta-hq.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: #eaeff3;
+	min-height: 200px;
+	height: 200px;
+	z-index: -50;
+}
+
+@media all and (min-width: 768px) {
+
+	.mobile-header {
+		display: none;
+	}
+
+	.header-wrap {
+		background: url('images/connexta-hq.jpg');
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		min-height: 540px;
+		height: 540px;
+	}
+
+	.header-wrap > .container,
+	.header-wrap > .container > .row {
+		height: 494px;
+	}
+}
+
 
 /* Header for CSR Page */
-.csr-header-wrap {
-	padding: 100px 10px;
+
+.csr-graphic-heading {
+	background: url('images/header-csr.jpg');
+}
+
+
+/* Header for Solutions Page */
+
+.solutions-graphic-heading {
+	background: url('images/header-solutions.jpg');
+}
+
+/*.solutions-header-wrap {
+	padding: 50px 10px;
 	color: #ffffff;
 	background: #315a72;
 	text-align: center;
-	background: url('images/header-csr.jpg');
+	background: url('images/header-solutions.jpg');
+	background-position: center center;
+	background-size: cover;
+}*/
+
+/* Header for news page */
+.news-header-wrap {
+	padding: 50px 10px;
+	color: #ffffff;
+	background: #315a72;
+	text-align: center;
+	background: url('images/header-news.jpg');
 	background-position: center center;
 	background-size: cover;
 }
 
+/* careers header */
+.careers-header-wrap {
+	padding: 50px 10px;
+	color: #ffffff;
+	text-align: center;
+	background: transparent;
+}
+
+.careers-header-wrap h3 {
+	color: #ffffff;
+	font-weight: 300;
+	margin-top: 7px;
+	margin-bottom: 0;
+}
+@media all and (min-width:768px) {
+
+	.careers-header-wrap h3 {
+		font-size: 32px;
+		font-size: 3.2rem;
+	}
+}
+
+@media all and (min-width:992px) {
+	.careers-header-wrap {
+		padding: 100px 10px;
+	}
+}
+
+@media all and (min-width:1200px) {
+	.careers-header-wrap {
+		padding: 180px 10px;
+	}
+}
+
+/* About page header */
+.about-header-wrap {
+	padding: 50px 10px;
+	color: #ffffff;
+	background: #315a72;
+	text-align: center;
+	background: url('images/header-about.jpg');
+	background-position: center center;
+	background-size: cover;
+}
+
+.about-header-wrap h3 {
+	color: #ffffff;
+	font-weight: 300;
+	margin-top: 7px;
+	margin-bottom: 0;
+}
+
+@media all and (min-width: 768px) {
+
+	.about-header-wrap h3 {
+		font-size: 3.2rem;
+	}
+}
+
+/* contact page header */
+
+.contact-header-wrap {
+	padding: 100px 10px;
+	color: #ffffff;
+	background: #315a72;
+	text-align: center;
+	background: url('images/header-contact.jpg');
+	background-position: center center;
+	background-size: cover;
+}
+
+.contact-header-wrap h3 {
+	color: #ffffff;
+	font-weight: 300;
+	margin-top: 7px;
+	margin-bottom: 0;
+}
+
+@media all and (min-width:768px) {
+
+	.contact-header-wrap {
+		padding: 130px 10px;
+	}
+}
+
+
+/* leadership header wrap */
+/*.leadership-header-wrap {
+	padding: 50px 10px;
+	color: #ffffff;
+	background: #315a72;
+	text-align: center;
+	background: url('images/header-careers.jpg');
+	background-position: center center;
+	background-size: cover;
+}*/
 
 /*
 =======================================================================================
@@ -856,15 +993,6 @@ section.mission-wrap {
 =======================================================================================
 */
 
-.news-header-wrap {
-	padding: 50px 10px;
-	color: #ffffff;
-	background: #315a72;
-	text-align: center;
-	background: url('images/header-careers.jpg');
-	background-position: center center;
-	background-size: cover;
-}
 
 .article {
 	background: #f1f1f1;
@@ -896,15 +1024,7 @@ section.mission-wrap {
 =======================================================================================
 */
 
-.leadership-header-wrap {
-	padding: 50px 10px;
-	color: #ffffff;
-	background: #315a72;
-	text-align: center;
-	background: url('images/header-careers.jpg');
-	background-position: center center;
-	background-size: cover;
-}
+
 
 .leader {
 	background-color: #f1f1f1;
@@ -995,15 +1115,7 @@ section.mission-wrap {
 =======================================================================================
 */
 
-.solutions-header-wrap {
-	padding: 50px 10px;
-	color: #ffffff;
-	background: #315a72;
-	text-align: center;
-	background: url('images/header-solutions.jpg');
-	background-position: center center;
-	background-size: cover;
-}
+
 
 .feature-wrap {
 	display: flex;
@@ -1044,19 +1156,7 @@ section.mission-wrap {
 =======================================================================================
 */
 
-.careers-header-wrap {
-	padding: 50px 10px;
-	color: #ffffff;
-	text-align: center;
-	background: transparent;
-}
 
-.careers-header-wrap h3 {
-	color: #ffffff;
-	font-weight: 300;
-	margin-top: 7px;
-	margin-bottom: 0;
-}
 
 .careers-mission-wrap p {
 	color: #ffffff;
@@ -1097,10 +1197,7 @@ section.mission-wrap {
 
 @media all and (min-width:768px) {
 
-	.careers-header-wrap h3 {
-		font-size: 32px;
-		font-size: 3.2rem;
-	}
+
 
 	.careers-mission-wrap p {
 		font-size: 26px;
@@ -1116,9 +1213,7 @@ section.mission-wrap {
 }
 
 @media all and (min-width:992px) {
-	.careers-header-wrap {
-		padding: 100px 10px;
-	}
+
 
 	.last-row .career-img {
 		margin-bottom: 0px;
@@ -1136,11 +1231,7 @@ section.mission-wrap {
 	}
 }
 
-@media all and (min-width:1200px) {
-	.careers-header-wrap {
-		padding: 180px 10px;
-	}
-}
+
 
 /*
 =======================================================================================
@@ -1148,22 +1239,7 @@ section.mission-wrap {
 =======================================================================================
 */
 
-.contact-header-wrap {
-	padding: 100px 10px;
-	color: #ffffff;
-	background: #315a72;
-	text-align: center;
-	background: url('images/header-contact.jpg');
-	background-position: center center;
-	background-size: cover;
-}
 
-.contact-header-wrap h3 {
-	color: #ffffff;
-	font-weight: 300;
-	margin-top: 7px;
-	margin-bottom: 0;
-}
 
 .contact-intro-text {
 	display: block;
@@ -1240,10 +1316,6 @@ section.mission-wrap {
 
 @media all and (min-width:768px) {
 
-	.contact-header-wrap {
-		padding: 130px 10px;
-	}
-
 	.contact-main-wrap {
 		padding: 100px 10px;
 	}
@@ -1301,22 +1373,7 @@ section.mission-wrap {
 =======================================================================================
 */
 
-.about-header-wrap {
-	padding: 50px 10px;
-	color: #ffffff;
-	background: #315a72;
-	text-align: center;
-	background: url('images/header-careers.jpg');
-	background-position: center center;
-	background-size: cover;
-}
 
-.about-header-wrap h3 {
-	color: #ffffff;
-	font-weight: 300;
-	margin-top: 7px;
-	margin-bottom: 0;
-}
 
 .mission-box {
 	text-align: center;
@@ -1445,10 +1502,6 @@ section.mission-wrap {
 }
 
 @media all and (min-width: 768px) {
-
-	.about-header-wrap h3 {
-		font-size: 3.2rem;
-	}
 
 	.value-flexbox:nth-child(2) {
 		flex-direction: row-reverse;
