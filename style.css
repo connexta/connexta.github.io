@@ -416,13 +416,13 @@ button:hover,
 		font-size: 18px;
 		font-size: 1.8rem;
 		margin-bottom: 45px;
-	/*	margin-left: 15px;*/
-		/*padding: 20px 20px 10px 20px;*/
+		margin-left: 0px;
+		padding: 20px 20px 10px 20px;
 		position: absolute;
 		bottom: 0;
 		left: 0;
-		/*background: #00aad3;*/
-		/*opacity: .95;*/
+		background: url('images/bg-proc-flex.png');
+		
 	}
 
 	.proc-flex h2 {
@@ -638,7 +638,7 @@ section.graphic-title-heading {
 
 /* Home Page heading */
 .header-wrap {
-	background: url('images/connexta-hq.jpg');
+	background: url('images/header-home.jpg');
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -655,7 +655,7 @@ section.graphic-title-heading {
 	}
 
 	.header-wrap {
-		background: url('images/connexta-hq.jpg');
+		background: url('images/header-home.jpg');
 		background-size: cover;
 		background-position: center center;
 		background-repeat: no-repeat;
