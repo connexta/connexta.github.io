@@ -72,15 +72,15 @@ img {
 */
 
 section.tall {
-	padding: 100px 0px;
+	padding: 100px 10px;
 }
 
 section.medium {
-	padding: 50px 0px;
+	padding: 50px 10px;
 }
 
 section.short {
-	padding: 25px 0;
+	padding: 25px 10px;
 }
 
 .gray {
@@ -984,6 +984,10 @@ section.mission-wrap {
 	opacity: .7;
 }
 
+.how-we-do-it {
+	text-align: center;
+}
+
 
 /*
 =======================================================================================
@@ -1057,13 +1061,13 @@ section.mission-wrap {
 
 .events {
 	display: flex;
-
+	flex-direction: column;
 	justify-content: space-between;
 	margin-top: 30px;
 }
 
 .upcoming-events-wrapper {
-	width: 65%;
+	width: 100%;
 	padding: 40px; 
 	background: url('images/st-marys.jpg');
 	background-position: center center;
@@ -1083,16 +1087,30 @@ section.mission-wrap {
 }
 
 .past-events-wrapper {
-	width: 32%;
+	width: 100%;
 	padding: 40px; 
 	background: #f8f8f8;
 }
 
-.past-event .date {
+.past-event {
+	margin-bottom: 10px;
+}
+
+.past-event:last-child {
+	margin-bottom: 0px;
+}
+
+.past-event a {
+	display: block;
+	background: #e4e8ea;
+	padding: 10px; 
+}
+
+/*.past-event .date {
 	display: inline-block;
 	font-weight: 400;
 	width: 100px;
-}
+}*/
 
 .upcoming-events-wrapper,
 .upcoming-events-wrapper h3, 
@@ -1106,6 +1124,20 @@ section.mission-wrap {
 	margin-top: 25px;"
 }
 
+@media all and (min-width: 920px) {
+	.events {
+		flex-direction: row;
+	}
+
+	.upcoming-events-wrapper {
+		width: 65%;
+	}
+
+	.past-events-wrapper {
+		width: 32%;
+	}
+}
+
 
 /*
 =======================================================================================
@@ -1117,12 +1149,14 @@ section.mission-wrap {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 25px;
+	flex-direction: column;
 }
 
 .product {
 	border: solid 1px #e1e1e1;
 	/*padding: 20px;*/
-	width: 49%;
+	width: 100%;
+	margin-bottom: 25px;
 }
 
 .product-logo {
@@ -1141,15 +1175,15 @@ section.mission-wrap {
 .tier-wrap {
 	display: flex;
 	justify-content: space-between;
-	
+	flex-direction: column;
 }
 
 .tier {
 	background: #e4e8ea;
 	border: solid 1px #e1e1e1;
 	padding: 20px;
-	width: 24%;
-	/*text-align: center;*/
+	width: 100%;
+	margin-bottom: 25px;
 }
 
 .tier,
@@ -1161,14 +1195,15 @@ section.mission-wrap {
 .feature-wrap {
 	display: flex;
 	justify-content: space-between;
-	
+	flex-direction: column;
 }
 
 .feature {
 	background: #00aad3;
 	padding: 20px;
-	width: 24%;
+	width: 100%;
 	text-align: center;
+	margin-bottom: 25px;
 }
 
 .feature .fa {
@@ -1188,6 +1223,35 @@ section.mission-wrap {
 
 .feature p {
 	margin-bottom: 0px;
+}
+
+@media all and (min-width: 920px) {
+	.products {
+		flex-direction: row;
+	}
+
+	.product {
+		width: 49%;
+		margin-bottom: 0px;
+	}
+
+	.tier-wrap {
+		flex-direction: row;
+	}
+
+	.tier {
+		width: 24%;
+		margin-bottom: 0px;
+	}
+
+	.feature-wrap {
+		flex-direction: row;
+	}
+
+	.feature {
+		width: 24%;
+		margin-bottom: 0px;
+	}
 }
 
 
