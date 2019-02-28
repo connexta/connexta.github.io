@@ -704,6 +704,15 @@ section.graphic-title-heading {
 	background-size: cover;
 }
 
+.news-article-heading-image {
+	margin-right: 10px;
+	text-align: left;
+}
+
+.news-article-heading-image img {
+	max-height: 50px;
+}
+
 /* careers header */
 .careers-header-wrap {
 	padding: 50px 10px;
