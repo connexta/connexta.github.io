@@ -1,0 +1,75 @@
+---
+---
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ page.title }}</title>
+	{% include head.html %} 
+</head>
+
+<body>
+
+	<div class="content-wrap">	
+
+	{% include  header.html %} 
+
+	<!--
+	<section class="std-title-heading">
+		<div class="container">
+			<h2 class="no-margin-top">News</h2>
+		</div>
+	</section>  
+	-->
+
+	<section class="graphic-title-heading news-graphic-heading medium">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<h1>News</h1>
+						<h3 style="color:white">Supporting mission critical services</h3>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	<section class="news-articles medium white">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8">
+					<div class="article">
+						<p style="text-align:center"> FOR IMMEDIATE RELEASE </p>
+						<p style="text-align:center"> <span class="publish-date">{{ page.date | date: '%B %d, %Y' }}</span></p>	
+
+						<h2 class="news-title">{{ page.title }}</h2>
+						<p>{{ content }}</p>
+					<!--	<p><a href="{{ post.url }}" class="header-link" title="Permalink"><span class="sr-only">Permalink</span><i class="fa fa-link"></i></a></p> -->
+					</div>
+				</div>
+				<div class="col-sm-4">
+						<div class="sidebar-nav">
+							<!-- <h2>News categories</h2> -->
+	 
+									{% for category in site.categories %}
+									  <h2> {{ category | first }} </h2>
+										<ul style="padding-left:0px;">
+										{% for post in category.last %}
+										  <li class="list-group-item"><a class="menu-item" href="{{ post.url }}">{{ post.title | truncatewords:5}}</a></li>
+										{% endfor %}
+										</ul>
+									{% endfor %}
+							</ul>
+						</div>			
+					</div>
+			</div>
+		</div>		
+	</section>	
+ 
+ 
+{% include  footer.html %} 	
+
+</div><!-- /content-wrap -->
+
+</body>
+
+</html>
+ 
