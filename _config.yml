@@ -1,18 +1,15 @@
+---
 # Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+version: 3.8.5
+min_ruby_version: 2.4.0
+name: Jekyll • Simple, blog-aware, static sites
+description: Transform your plain text into static websites and blogs
+url: https://connexta.com
+repository: https://github.com/connexta/connexta.github.io
+timezone: America/Phoenix
+twitter:
+  username:  
+logo:  
 title: Connexta
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
@@ -21,14 +18,49 @@ description: > # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username:  
+github_username:   
 
-# Build settings
-# markdown: kramdown
-# theme: minima
-# gems:
-#   - jekyll-feed
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
+
+collections:
+  docs:
+    permalink: "/:collection/:path/"
+    output: true
+  posts:
+    permalink: "/news/:year/:month/:day/:title/"
+    output: true
+  tutorials:
+    output: true
+
+defaults:
+- scope:
+    path: _docs
+    type: docs
+  values:
+    layout: 
+- scope:
+    path: _posts
+    type: posts
+  values: 
+    layout: 
+    image:  
+
+plugins:
+
+
+feed:
+  categories:
+    - Press Releases
+    - Announcements
+
+sass:
+  style:  
+
+exclude:
+- .gitignore
+- .jekyll-cache
+- CNAME
+- icomoon-selection.json
+- readme.md
+
+excerpt_separator: "<!-- more -->"
