@@ -76,14 +76,17 @@
 =======================================================================================
 */
 
+div.tall,
 section.tall {
 	padding: 100px 10px;
 }
 
+div.medium,
 section.medium {
 	padding: 50px 10px;
 }
 
+div.short,
 section.short {
 	padding: 25px 10px;
 }
@@ -1840,7 +1843,6 @@ section.mission-wrap {
 
 .footer-wrap {
 	background: #f7f7f7;
-	padding: 25px 10px; 
 }
 
 .footer-wrap p {
@@ -1898,11 +1900,5 @@ section.mission-wrap {
 
 .social-media a:hover {
 	opacity: .8;
-}
-
-@media all and (min-width: 600px) {
-	.footer-wrap {
-		padding: 50px 10px;
-	}
 }
 
