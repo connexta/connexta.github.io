@@ -28,11 +28,7 @@
 
   	## HOMEPAGE MISSION
 
-  	## HOMEPAGE HOW WE HELP
-
-  	## HOMEPAGE WHO WE SUPPORT
-
-  	## HOMEPAGE HOW WE DO IT
+  	## HOMEPAGE SECTIONS
 
   	## NEWS
 
@@ -977,18 +973,6 @@ section.graphic-title-heading {
 	}
 }
 
-
-/* leadership header wrap */
-/*.leadership-header-wrap {
-	padding: 50px 10px;
-	color: #ffffff;
-	background: #315a72;
-	text-align: center;
-	background: url('images/header-careers.jpg');
-	background-position: center center;
-	background-size: cover;
-}*/
-
 /*
 =======================================================================================
 	HOMEPAGE MISSION
@@ -1029,9 +1013,24 @@ section.mission-wrap {
 
 /*
 =======================================================================================
-	HOMEPAGE HOW WE HELP
+	HOMEPAGE SECTIONS
 =======================================================================================
 */
+
+
+/* INTRO SECTION */
+
+.home-section1 {
+	background: url('images/laptop-background.jpg');
+	background-position: center center;
+	background-size: cover;
+}
+
+.home-section2 {}
+
+.home-section3 {}
+
+.home-section4 {}
 		
 .screenshot {
 	text-align: center;
@@ -1059,11 +1058,6 @@ section.mission-wrap {
 	width: 80%; 
 }
 
-/*
-=======================================================================================
-	HOMEPAGE WHO WE SUPPORT
-=======================================================================================
-*/
 
 .featured-row-wrapper {
 	display: flex; 
@@ -1162,18 +1156,8 @@ section.mission-wrap {
 }
 
 
-/*
-=======================================================================================
-	HOMEPAGE HOW WE DO IT
-=======================================================================================
-*/
-
-.how-wrap picture {
+.home-section5 picture {
 	opacity: .7;
-}
-
-.how-we-do-it {
-	text-align: center;
 }
 
 
