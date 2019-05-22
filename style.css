@@ -399,6 +399,9 @@ button:hover,
 =======================================================================================
 */
 
+.header-wrap > .container {  /* temporarily hide rotator */
+	display: none;
+}
 
 
 .proc-flex-wrap {
@@ -640,17 +643,25 @@ ul.navbar-nav > li > a:hover {
 
 	ul.nav > li > a {
 		padding: 5px 20px;
-		color: #020a15;
+		color: #516f84;
 		text-transform: uppercase;
-		transition: .2s;
-		border-bottom: 0px;
+		border-bottom: solid 3px transparent;
 		font-size: 1.6rem;
+		transition: .5s;
 	}
 
 	ul.nav > li > a:hover {
 		color: #869297;
 		opacity: .7;
 		text-decoration: none;
+		border-bottom: #00aad3 solid 3px;
+	}
+
+	.nav .open > a, 
+	.nav .open > a:hover, 
+	.nav .open > a:focus {
+		border-color: #00aad3;
+		color: #516f84;
 	}
 }
 
@@ -980,7 +991,7 @@ section.graphic-title-heading {
 */
 
 section.mission-wrap {
-	background: #c3c8ca;
+	background: #00aad3;
 	color: #FFFFFF;
 	text-align: center;
 }
