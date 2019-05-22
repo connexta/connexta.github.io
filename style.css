@@ -1,4 +1,4 @@
-+/* NOTES: 
+/* NOTES: 
 
   Connexta Blue #00aad3;
   '
@@ -260,13 +260,19 @@ img {
 .img-csr { border: 1px #f8f8f8 solid}
 .img-csr:hover { border: 1px #00aad3 solid}
 
-.video-responsive{
+.responsive-video-wrap {
+	margin: 0 auto;
+	max-width: 500px;
+}
+
+.video-responsive {
 	overflow:hidden;
 	padding-bottom:56.25%;
 	position:relative;
-	height:0;
+	height:300px;
 }
-.video-responsive iframe{
+
+.video-responsive iframe {
 	left:0;
 	top:0;
 	height:100%;
