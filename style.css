@@ -388,7 +388,7 @@ button:hover,
 */
 
 .header-wrap > .container {  /* temporarily hide rotator */
-	display: none;
+	/*display: none;*/
 }
 
 
@@ -1021,7 +1021,7 @@ section.mission-wrap {
 /* INTRO SECTION */
 
 .home-section1 {
-	background: url('images/laptop-background.jpg');
+	/*background: url('images/laptop-background.jpg');*/
 	background-position: center center;
 	background-size: cover;
 }
@@ -1083,8 +1083,6 @@ section.mission-wrap {
 	max-width: 360px;
 	margin: 0 auto;
 	margin-bottom: 25px;
-	border: solid 1px #e1e1e1;
-	background: #e4e8ea;
 	padding: 10px;
 } 
 
@@ -1206,6 +1204,68 @@ section.mission-wrap {
 .logo-grid {
 	margin-bottom: 15px;
 }
+
+.home-section2 {
+	 background-image: radial-gradient(
+      farthest-corner at 40px 40px,
+      rgba(225, 225, 225, 0.1) 0%,
+      rgba(134, 146, 151, .2) 100%
+   );
+
+	 overflow: hidden;
+}
+
+.blockquote::before {
+   content: "&";
+   font-size: 55vh;
+   font-family: Georgia;
+   color: rgba(0, 0, 0, 0.05);
+   position: absolute;
+   top: -25vh;
+   left: 0vh;
+}
+
+.blockquote {
+   display: flex;
+   align-items: center;
+   margin-left: 10vh;
+}
+
+.blockquote blockquote {
+   font-size: 40px;
+   width: 80%;
+   margin: 0 auto;
+   border-left: 0px;
+}
+
+.blockquote blockquote h1 {
+   font-size: 4rem;
+}
+
+.blockquote blockquote p {
+   font-style: italic;
+   margin-bottom: 0;
+}
+
+.blockquote blockquote p::before,
+.blockquote blockquote p::after {
+   content: "“";
+   font-family: Georgia;
+   font-size: 18rem;
+   margin: -7rem 0 0 -9rem;
+   position: absolute;
+   opacity: 0.5;
+}
+
+.blockquote blockquote p::after {
+   content: "”";
+   margin: -6rem -4rem 0 0;
+}
+
+.blockquote blockquote cite {
+   font-size: 1.5rem;
+}
+
 
 
 /*
