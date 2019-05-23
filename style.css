@@ -74,17 +74,17 @@
 
 div.tall,
 section.tall {
-	padding: 100px 10px;
+	padding: 100px 10px 85px 10px;
 }
 
 div.medium,
 section.medium {
-	padding: 50px 10px;
+	padding: 50px 10px 35px 10px;
 }
 
 div.short,
 section.short {
-	padding: 25px 10px;
+	padding: 25px 10px 10px 10px;
 }
 
 .gray {
@@ -182,9 +182,10 @@ p {
 	margin: 15px 0;
 }
 
-p:last-child {
+/*p:last-child {
 	padding-bottom: 0px;
-}
+	margin-bottom: 0px;
+}*/
 
 p.section-description {
 	text-align: center;
@@ -203,11 +204,11 @@ p.section-description-light {
 
 /* TYPOGRAPHY MODIFIERS */ 
 
-.white-text{color:#fff ;}
+/*.white-text{color:#fff ;}
 
 .gray-text{color:#e4e8ea;}
 
-.connexta-brand {color:#00aad3;}
+.connexta-brand {color:#00aad3;}*/
 
 
 .section-title {
@@ -1027,9 +1028,16 @@ section.mission-wrap {
 
 .home-section2 {}
 
-.home-section3 {}
+.home-section3 {
+	background: url('images/page-img-globe.jpg');
+}
 
 .home-section4 {}
+
+.home-section5 .section-subtitle {
+	margin-top: 0px;
+	padding-top: 0px;
+}
 		
 .screenshot {
 	text-align: center;
@@ -1168,8 +1176,8 @@ section.mission-wrap {
 }
 
 .responsive-video-wrap {
-	margin: 0 auto;
-	max-width: 500px;
+	margin: 15px auto 25px auto;
+	max-width: 800px;
 }
 
 .video-responsive {
@@ -1177,6 +1185,9 @@ section.mission-wrap {
 	padding-bottom:56.25%;
 	position:relative;
 	height: 0px;
+	-webkit-box-shadow: 4px 4px 10px -4px rgba(0,0,0,0.7);
+	-moz-box-shadow: 4px 4px 10px -4px rgba(0,0,0,0.7);
+	box-shadow: 4px 4px 10px -4px rgba(0,0,0,0.7);
 }
 
 .video-responsive iframe {
@@ -1190,6 +1201,10 @@ section.mission-wrap {
 
 .home-section5 picture {
 	opacity: .7;
+}
+
+.logo-grid {
+	margin-bottom: 15px;
 }
 
 
