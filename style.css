@@ -1244,13 +1244,6 @@ section.mission-wrap {
    left: 0vh;
 }
 
-.vanessa-csr-quote .blockquote::before {
-   font-size: 55vh;
-   position: absolute;
-   top: -27vh;
-   left: 0vh;
-}
-
 .blockquote {
    display: flex;
    align-items: center;
@@ -1292,6 +1285,15 @@ section.mission-wrap {
    font-size: 1.5rem;
 }
 
+
+.vanessa-csr-quote .blockquote::before {
+   content: "";
+}
+
+.vanessa-csr-quote .blockquote blockquote p::before,
+.vanessa-csr-quote .blockquote blockquote p::after {
+   opacity: 0.2;
+}
 
 
 /*
