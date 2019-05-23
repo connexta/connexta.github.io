@@ -210,14 +210,14 @@ p.section-description-light {
 .connexta-brand {color:#00aad3;}
 
 
-h2.section-title {
+.section-title {
 	font-size: 30px;
 	font-size: 3rem;
 	margin: 0px;
 	text-align: center;
 }
 
-h2.section-title-light {
+.section-title-light {
 	font-size: 30px;
 	font-size: 3rem;
 	margin: 0px;
@@ -225,18 +225,32 @@ h2.section-title-light {
 	color: #ffffff;
 }
 
+.section-subtitle {
+	font-size: 15px;
+	font-size: 1.5rem;
+	text-align: center;
+	color: #869297;	
+	margin-bottom: 30px;
+}
+
 @media all and (min-width:720px) {
-	h2.section-title {
+	.section-title {
 		font-size: 36px;
 		font-size: 3.6rem;
 		margin: 0px;
 	}
 
-	h2.section-title-light {
+	.section-title-light {
 		font-size: 36px;
 		font-size: 3.6rem;
 		margin: 0px;
 		color: #ffffff;
+	}
+
+	.section-subtitle {
+		font-size: 18px;
+		font-size: 1.8rem;
+		color: #869297;	
 	}
 }
 
@@ -252,33 +266,6 @@ h2.section-title-light {
 img {
 	max-width: 100%;
 }
-
-
-.bullet-text {font-weight: bold}
-
-.img-csr { border: 1px #f8f8f8 solid}
-.img-csr:hover { border: 1px #00aad3 solid}
-
-.responsive-video-wrap {
-	margin: 0 auto;
-	max-width: 500px;
-}
-
-.video-responsive {
-	overflow:hidden;
-	padding-bottom:56.25%;
-	position:relative;
-	height:300px;
-}
-
-.video-responsive iframe {
-	left:0;
-	top:0;
-	height:100%;
-	width:100%;
-	position:absolute;
-}
-
 
 
 
@@ -1028,6 +1015,7 @@ section.mission-wrap {
 =======================================================================================
 */
 
+/* To Do: Organize this section */
 
 /* INTRO SECTION */
 
@@ -1059,6 +1047,7 @@ section.mission-wrap {
 	background: #00aad3;
 	color: #ffffff;
 	padding: 5px;
+	border-radius: 50px;
 }
 
 .bullet-icon {
@@ -1164,6 +1153,38 @@ section.mission-wrap {
 	.featured-description {
 		padding-top: 0px;
 	}
+}
+
+.bullet-text { 
+	font-weight: bold;
+}
+
+.img-csr { 
+	border: 1px #f8f8f8 solid;
+}
+
+.img-csr:hover {
+	border: 1px #00aad3 solid;
+}
+
+.responsive-video-wrap {
+	margin: 0 auto;
+	max-width: 500px;
+}
+
+.video-responsive {
+	overflow:hidden;
+	padding-bottom:56.25%;
+	position:relative;
+	height: 0px;
+}
+
+.video-responsive iframe {
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	position:absolute;
 }
 
 
