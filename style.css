@@ -201,6 +201,10 @@ p.section-description-light {
 	margin: 0 auto 35px auto;
 }
 
+ul {
+	list-style-position: inside;
+}
+
 
 /* TYPOGRAPHY MODIFIERS */ 
 
@@ -1205,7 +1209,7 @@ section.mission-wrap {
 	margin-bottom: 15px;
 }
 
-.home-section2 {
+.quote-section {
 	 background-image: radial-gradient(
       farthest-corner at 40px 40px,
       rgba(225, 225, 225, 0.1) 0%,
@@ -1215,6 +1219,21 @@ section.mission-wrap {
 	 overflow: hidden;
 }
 
+.quote-image {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	margin-right: 10px;
+}
+
+.quote-image img {
+	border-radius: 50%;
+	border: solid 3px #b8c1c9;
+	-webkit-box-shadow: 4px 4px 10px -7px rgba(0,0,0,0.75);
+	-moz-box-shadow: 4px 4px 10px -7px rgba(0,0,0,0.75);
+	box-shadow: 4px 4px 10px -7px rgba(0,0,0,0.75);
+}
+
 .blockquote::before {
    content: "&";
    font-size: 55vh;
@@ -1222,6 +1241,13 @@ section.mission-wrap {
    color: rgba(0, 0, 0, 0.05);
    position: absolute;
    top: -25vh;
+   left: 0vh;
+}
+
+.vanessa-csr-quote .blockquote::before {
+   font-size: 55vh;
+   position: absolute;
+   top: -27vh;
    left: 0vh;
 }
 
