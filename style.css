@@ -1005,6 +1005,7 @@ section.mission-wrap {
 .mission-description {
 	font-weight: light;
 	font-size: 1.6rem;
+	padding-bottom: 15px;
 }
 
 		@media all and (min-width: 720px) {
@@ -1064,6 +1065,7 @@ section.mission-wrap {
 
 .bullet-icon {
 	width: 12%;
+	margin-left: 7px;
 }
 
 .bullet-text {
@@ -1998,7 +2000,7 @@ section.mission-wrap {
 	margin: 0 auto;
 	border-spacing: 10px;
 	line-height: 1;
-	margin-bottom: -15px;
+	margin-bottom: 15px;
 }
 
 .social-media a {
