@@ -48,7 +48,7 @@
  
 								{% for category in site.categories %}
 								  <h2> {{ category | first }} </h2>
-									<ul style="padding-left:0px;">
+									<ul class="sidebar-section">
 									{% for post in category.last %}
 									  <li class="list-group-item"><a class="menu-item" href="{{ post.url }}">{{ post.title | truncatewords:9}}</a></li>
 									{% endfor %}
