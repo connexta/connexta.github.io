@@ -372,9 +372,10 @@ button:hover,
 	margin: 20px 0;
 	display: block;
 	width: 163px;
-	height: 35px;
+	height: 45px;
 	background: url('images/connexta-logo.png');
 	background-size: contain;
+	background-repeat: no-repeat;
 	cursor: pointer;
 }
 
@@ -566,7 +567,7 @@ button.navbar-toggle:active {
 
 
 .nav-wrapper {
- 	margin-top: 10px;
+ 	margin-top: 20px;
  	padding-right: 0;
  	position: relative;
  	z-index: 1;
@@ -633,7 +634,7 @@ ul.navbar-nav > li > a:hover {
 		float: right;
 		text-align: right;
 		background: transparent;
-		margin-top: 23px;
+		margin-top: 28px;
 	}
 
 	ul.navbar-nav > li {
@@ -737,14 +738,50 @@ section.graphic-title-heading {
 
 /* Home Page heading */
 .header-wrap {
-	background: url('images/header-home.jpg');
+	/*background: url('images/header-home.jpg');*/
+	background: url('images/header-home-octo.jpg');
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-color: #eaeff3;
 	min-height: 200px;
-	height: 200px;
+	height: auto;
 	z-index: -50;
+}
+
+/* Octo Acquisition */
+.octo-acquisition {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	padding: 40px 0px;
+}
+
+.octo-acquisition img {
+	margin-bottom: 0px;
+	max-width: 200px;
+}
+
+.octo-acquisition div {
+	margin-bottom: 20px;
+	color: #ffffff;
+	font-size: 25px;
+	text-align: center;
+}
+
+.octo-acquisition button {
+	color: #ffffff;
+	border: solid 1px #ffffff;
+	font-size: 16px;
+	background: url('images/transparent-white.png');
+}
+
+.octo-acquisition button:hover {
+	background: #ffffff;
+	background: url('images/transparent-white-hover.png');
 }
 
 @media all and (min-width: 768px) {
@@ -754,9 +791,9 @@ section.graphic-title-heading {
 	}
 
 	.header-wrap {
-		background: url('images/header-home.jpg');
+		background: url('images/header-home-octo.jpg');
 		background-size: cover;
-		background-position: center center;
+		background-position: bottom center;
 		background-repeat: no-repeat;
 		min-height: 540px;
 		height: 540px;
@@ -765,6 +802,18 @@ section.graphic-title-heading {
 	.header-wrap > .container,
 	.header-wrap > .container > .row {
 		height: 494px;
+	}
+
+	.octo-acquisition img {
+		max-width: 400px;
+	}
+
+	.octo-acquisition div {
+		font-size: 60px;
+	}
+
+	.octo-acquisition button {
+		font-size: 20px;
 	}
 }
 
